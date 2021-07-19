@@ -61,10 +61,6 @@ execute_process(
 
 add_subdirectory(shaders)
 
-if(MSVC)
-    add_subdirectory(platform/windows)
-endif()
-
 add_subdirectory(src)
 
 if(INEXOR_BUILD_BENCHMARKS)
