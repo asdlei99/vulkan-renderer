@@ -1,7 +1,13 @@
+if(MSVC)
 add_executable(inexor-vulkan-renderer-example
-main.cpp
-${CMAKE_BINARY_DIR}/include/inexor/vulkan-renderer/win_resource_file.rc
+    main.cpp
+    ${CMAKE_BINARY_DIR}/include/inexor/vulkan-renderer/win_resource_file.rc
 )
+else()
+add_executable(inexor-vulkan-renderer-example
+    main.cpp
+)
+endif()
 
 set_target_properties(
     inexor-vulkan-renderer-example PROPERTIES
