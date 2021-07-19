@@ -1,7 +1,5 @@
 add_executable(inexor-vulkan-renderer-example
 main.cpp
-# Windows resource file to set application icon and metadata
-${PROJECT_SOURCE_DIR}/platform/windows/win_resource_file.rc
 )
 
 set_target_properties(

@@ -63,6 +63,10 @@ add_subdirectory(shaders)
 
 add_subdirectory(src)
 
+if(MSVC)
+    add_subdirectory(platform/windows)
+endif()
+
 if(INEXOR_BUILD_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()
