@@ -1,5 +1,6 @@
 add_executable(inexor-vulkan-renderer-example
 main.cpp
+${CMAKE_BINARY_DIR}/include/inexor/vulkan-renderer/win_resource_file.rc
 )
 
 set_target_properties(

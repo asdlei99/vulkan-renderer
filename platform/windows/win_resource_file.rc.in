@@ -3,8 +3,8 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION ${APP_VERSION_MAJOR},${APP_VERSION_MINOR},${APP_VERSION_PATCH},0
- PRODUCTVERSION ${APP_VERSION_MAJOR},${APP_VERSION_MINOR},${APP_VERSION_PATCH},0
+ FILEVERSION ${INEXOR_APP_VERSION_MAJOR},${INEXOR_APP_VERSION_MINOR},${INEXOR_APP_VERSION_PATCH},0
+ PRODUCTVERSION ${INEXOR_ENGINE_VERSION_MAJOR},${INEXOR_ENGINE_VERSION_MINOR},${INEXOR_ENGINE_VERSION_PATCH},0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -20,14 +20,14 @@ BEGIN
         BLOCK "040704b0"
         BEGIN
             // These placeholders will be filled out with the values specified by CMake
-            VALUE "CompanyName", "${APP_MANUFACTURER_NAME}"
-            VALUE "FileDescription", "${APP_DESCRIPTION}"
-            VALUE "FileVersion", "${APP_VERSION_MAJOR}.${APP_VERSION_MINOR}.${APP_VERSION_PATCH}"
-            VALUE "InternalName", "${APP_NAME}"
-            VALUE "LegalCopyright", "${APP_LICENSE}"
-            VALUE "OriginalFilename", "${APP_ORIGINAL_NAME}"
-            VALUE "ProductName", "${APP_NAME}"
-            VALUE "ProductVersion", "${APP_VERSION_MAJOR}.${APP_VERSION_MINOR}.${APP_VERSION_PATCH}"
+            VALUE "CompanyName", "${INEXOR_DEV_TEAM_NAME}"
+            VALUE "FileDescription", "${INEXOR_APP_NAME}"
+            VALUE "FileVersion", "${INEXOR_APP_VERSION_MAJOR}.${INEXOR_APP_VERSION_MINOR}.${INEXOR_APP_VERSION_PATCH}"
+            VALUE "InternalName", "${INEXOR_ENGINE_NAME}"
+            VALUE "LegalCopyright", "${INEXOR_LICENSE}"
+            VALUE "OriginalFilename", "${INEXOR_APP_NAME}"
+            VALUE "ProductName", "${INEXOR_APP_NAME}"
+            VALUE "ProductVersion", "${INEXOR_ENGINE_VERSION_MAJOR}.${INEXOR_ENGINE_VERSION_MINOR}.${INEXOR_ENGINE_VERSION_PATCH}"
         END
     END
     BLOCK "VarFileInfo"
