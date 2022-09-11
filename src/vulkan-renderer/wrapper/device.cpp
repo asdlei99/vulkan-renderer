@@ -131,6 +131,7 @@ Device::Device(const wrapper::Instance &instance, const VkSurfaceKHR surface, bo
 
         // In this case, there is one queue family which can be used for both graphics and presentation.
         queues_to_create.push_back(make_info<VkDeviceQueueCreateInfo>({
+            .sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO,
             .queueFamilyIndex = *queue_family_index_for_both_graphics_and_presentation,
             .queueCount = 1,
             .pQueuePriorities = &::DEFAULT_QUEUE_PRIORITY,
@@ -162,6 +163,7 @@ Device::Device(const wrapper::Instance &instance, const VkSurfaceKHR surface, bo
 
         // Set up one queue for graphics.
         queues_to_create.push_back(make_info<VkDeviceQueueCreateInfo>({
+            .sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO,
             .queueFamilyIndex = m_graphics_queue_family_index,
             .queueCount = 1,
             .pQueuePriorities = &::DEFAULT_QUEUE_PRIORITY,
@@ -169,6 +171,7 @@ Device::Device(const wrapper::Instance &instance, const VkSurfaceKHR surface, bo
 
         // Set up one queue for presentation.
         queues_to_create.push_back(make_info<VkDeviceQueueCreateInfo>({
+            .sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO,
             .queueFamilyIndex = m_present_queue_family_index,
             .queueCount = 1,
             .pQueuePriorities = &::DEFAULT_QUEUE_PRIORITY,
@@ -190,6 +193,7 @@ Device::Device(const wrapper::Instance &instance, const VkSurfaceKHR surface, bo
         use_distinct_data_transfer_queue = true;
 
         queues_to_create.push_back({
+            .sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO,
             .queueFamilyIndex = m_transfer_queue_family_index,
             .queueCount = 1,
             .pQueuePriorities = &::DEFAULT_QUEUE_PRIORITY,

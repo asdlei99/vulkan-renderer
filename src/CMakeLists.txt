@@ -103,37 +103,19 @@ target_include_directories(
     inexor-vulkan-renderer
 
     PUBLIC
-    ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/third_party
-    # Include configured header file which contains engine metadata
-    ${CMAKE_CURRENT_BINARY_DIR}/include/
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_BINARY_DIR}/include
+    ${stb_SOURCE_DIR}
 )
 
-if(CONAN_LIBS)
-    target_link_libraries(
-        inexor-vulkan-renderer
-
-        PUBLIC
-        ${CONAN_LIBS}
-        Vulkan::Vulkan
-    )
-else()
-    foreach(_LIB ${CONAN_LIBS_RELEASE})
-        target_link_libraries(
-            inexor-vulkan-renderer
-            optimized
-
-            ${_LIB}
-            Vulkan::Vulkan
-        )
-    endforeach()
-    foreach(_LIB ${CONAN_LIBS_DEBUG})
-        target_link_libraries(
-            inexor-vulkan-renderer
-            debug
-
-            ${_LIB}
-            Vulkan::Vulkan
-        )
-    endforeach()
-endif()
+target_link_libraries(inexor-vulkan-renderer
+    PUBLIC
+    fmt::fmt
+    glfw
+    glm::glm
+    imgui
+    spdlog
+    tinygltf
+    toml11::toml11
+    Vulkan::Vulkan
+    VulkanMemoryAllocator)
