@@ -18,6 +18,7 @@ class InexorConan(ConanFile):
         "stb/cci.20210910",
         "tinygltf/2.5.0",
         "toml11/3.7.1",
+        "volk/1.3.224.0",
         "vulkan-headers/1.3.224.0",
         "vulkan-loader/1.3.224.0",
         "vulkan-memory-allocator/3.0.1",
