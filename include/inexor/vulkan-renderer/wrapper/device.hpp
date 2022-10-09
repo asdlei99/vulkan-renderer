@@ -1,7 +1,6 @@
 #pragma once
 
 #include "inexor/vulkan-renderer/wrapper/command_pool.hpp"
-#include "inexor/vulkan-renderer/wrapper/instance.hpp"
 
 #include <vk_mem_alloc.h>
 #include <vulkan/vulkan_core.h>
@@ -14,6 +13,9 @@
 #include <string>
 
 namespace inexor::vulkan_renderer::wrapper {
+
+// Forward declaration
+class Instance;
 
 /// A wrapper struct for physical device data
 struct DeviceInfo {

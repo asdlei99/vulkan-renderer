@@ -5,6 +5,7 @@
 #include "inexor/vulkan-renderer/vk_tools/device_info.hpp"
 #include "inexor/vulkan-renderer/vk_tools/enumerate.hpp"
 #include "inexor/vulkan-renderer/vk_tools/representation.hpp"
+#include "inexor/vulkan-renderer/wrapper/instance.hpp"
 #include "inexor/vulkan-renderer/wrapper/make_info.hpp"
 
 #define VMA_IMPLEMENTATION
