@@ -1,14 +1,10 @@
 #pragma once
 
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
-
 #include "inexor/vulkan-renderer/wrapper/command_buffer.hpp"
-
-#include <cassert>
 
 namespace inexor::vulkan_renderer::wrapper {
 
+// Forward declaration
 class Device;
 
 /// @brief RAII wrapper class for VkCommandPool.

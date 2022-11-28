@@ -2,7 +2,6 @@
 
 #include <vulkan/vulkan_core.h>
 
-#include <array>
 #include <string>
 
 namespace inexor::vulkan_renderer::vk_tools {

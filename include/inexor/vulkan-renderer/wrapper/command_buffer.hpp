@@ -1,19 +1,17 @@
 #pragma once
 
-#include <vulkan/vulkan_core.h>
-
 #include "inexor/vulkan-renderer/wrapper/fence.hpp"
 #include "inexor/vulkan-renderer/wrapper/gpu_memory_buffer.hpp"
-#include "inexor/vulkan-renderer/wrapper/semaphore.hpp"
 
+#include <cassert>
 #include <cstdint>
 #include <memory>
 #include <span>
-#include <string>
 #include <vector>
 
 namespace inexor::vulkan_renderer::wrapper {
 
+// Forward declaration
 class Device;
 
 /// @brief RAII wrapper class for VkCommandBuffer.

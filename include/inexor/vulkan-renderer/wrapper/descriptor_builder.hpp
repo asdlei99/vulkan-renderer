@@ -1,8 +1,8 @@
 #pragma once
 
-#include <vulkan/vulkan_core.h>
-
 #include "inexor/vulkan-renderer/wrapper/make_info.hpp"
+
+#include <vulkan/vulkan_core.h>
 
 #include <cassert>
 #include <string>
@@ -10,7 +10,7 @@
 
 namespace inexor::vulkan_renderer::wrapper {
 
-// forward declarations
+// Forward declarations
 class Device;
 class ResourceDescriptor;
 

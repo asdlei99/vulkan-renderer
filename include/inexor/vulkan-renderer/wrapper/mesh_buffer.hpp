@@ -2,18 +2,15 @@
 
 #include "inexor/vulkan-renderer/wrapper/gpu_memory_buffer.hpp"
 
-#include <vk_mem_alloc.h>
-#include <vulkan/vulkan_core.h>
-
 #include <cassert>
 #include <cstdint>
 #include <optional>
-#include <stdexcept>
 #include <string>
 #include <vector>
 
 namespace inexor::vulkan_renderer::wrapper {
 
+// Forward declaration
 class Device;
 
 /// @brief RAII wrapper class for mesh buffers.

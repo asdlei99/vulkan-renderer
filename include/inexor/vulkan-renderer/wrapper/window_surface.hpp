@@ -1,10 +1,7 @@
 #pragma once
 
 #include <GLFW/glfw3.h>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan.h>
-
-#include <cassert>
+#include <vulkan/vulkan_core.h>
 
 namespace inexor::vulkan_renderer::wrapper {
 

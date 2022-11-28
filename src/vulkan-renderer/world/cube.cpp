@@ -1,5 +1,8 @@
 #include "inexor/vulkan-renderer/world/cube.hpp"
+
 #include "inexor/vulkan-renderer/world/indentation.hpp"
+
+#include <spdlog/spdlog.h>
 
 #include <random>
 

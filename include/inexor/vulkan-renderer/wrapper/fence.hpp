@@ -2,12 +2,12 @@
 
 #include <vulkan/vulkan_core.h>
 
-#include <cassert>
 #include <limits>
 #include <string>
 
 namespace inexor::vulkan_renderer::wrapper {
 
+// Forward declaration
 class Device;
 
 /// @brief A RAII wrapper for VkFences.

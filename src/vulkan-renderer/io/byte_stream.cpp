@@ -1,7 +1,9 @@
 #include "inexor/vulkan-renderer/io/byte_stream.hpp"
+
 #include "inexor/vulkan-renderer/world/cube.hpp"
 
 #include <fstream>
+#include <utility>
 
 namespace inexor::vulkan_renderer::io {
 std::vector<std::uint8_t> ByteStream::read_file(const std::filesystem::path &path) {

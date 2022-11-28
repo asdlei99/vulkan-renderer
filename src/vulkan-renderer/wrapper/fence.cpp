@@ -6,6 +6,7 @@
 
 #include <spdlog/spdlog.h>
 
+#include <cassert>
 #include <stdexcept>
 #include <utility>
 
